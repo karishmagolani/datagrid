@@ -2,6 +2,8 @@
 
 This project is a simple React-based datagrid/table created using **Next.js** with TypeScript. It displays data, allows users to select rows, and enables downloading selected items if specific conditions are met.
 
+Deployed on Vercel: [Link] https://datagrid-git-main-karishma-golanis-projects.vercel.app/
+
 ---
 
 ## Features
@@ -34,18 +36,12 @@ This project is a simple React-based datagrid/table created using **Next.js** wi
 
 ### Steps
 
-1. Clone the repository:
-
-   ```bash
-   git clone <repository-link>
-   cd <repository-folder>
-
-   ```
-
-2. npm install
+```
+1. npm install
    # or
    yarn install
-3. npm run dev
+2. npm run dev
    # or
    yarn dev
-4. Open the app in your browser at http://localhost:3000.
+3. Open the app in your browser at http://localhost:3000.
+```
