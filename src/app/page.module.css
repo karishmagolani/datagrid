@@ -5,14 +5,7 @@
 
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
   font-family: var(--font-geist-sans);
 }
 
@@ -68,10 +61,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -165,4 +155,103 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Main container */
+.datagrid-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.header input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.header button {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.header button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Table styles */
+.datagrid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datagrid-table th,
+.datagrid-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.datagrid-table th {
+  background-color: #f5f5f5;
+}
+
+.datagrid-table td:first-child,
+.datagrid-table th:first-child {
+  text-align: center;
+  width: 50px;
+}
+
+/* Checkbox styles */
+.datagrid-table input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Row hover effect */
+.datagrid-table tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Status indicator styles */
+.status-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.status-indicator .dot {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 8px;
 }
